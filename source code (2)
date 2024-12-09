@@ -1,0 +1,19 @@
+
+def is_number(string):
+    """
+    The function returns True if the string is a number,   otherwise False.
+    """
+    try:
+        float(string)  
+        return True
+    except ValueError:
+        return False
+
+if __name__ == "__main__":
+    user_input = input("Enter a string: ")
+    if is_number(user_input):
+        print(f"'{user_input}' is a number.")
+    else:
+        print(f"'{user_input}' is not a number.")
+
+
